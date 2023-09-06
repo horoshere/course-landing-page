@@ -1,0 +1,47 @@
+.screen__first {
+    background: url('../img/main_bg.png')  no-repeat;
+    // center center/cover
+    height: 948px;
+    padding-top: 60px;
+    padding-bottom: 115px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        display: flex;
+        width: 110px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        margin-right: 24px;
+        transition: 0.5s all;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.50);
+            background: linear-gradient(180deg, rgba(254, 200, 241, 0.90) -22.92%, rgba(237, 146, 215, 0.00) 26.73%), radial-gradient(96.63% 140.33% at 76.68% 66.67%, rgba(96, 46, 166, 0.00) 0%, rgba(201, 119, 214, 0.50) 100%);
+            background-blend-mode: overlay, normal;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
+        }
+    }
+    &__link {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+}
