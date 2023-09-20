@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -27,6 +27,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header .logo {
+  cursor: pointer;
+}
 
 .menu {
   display: flex;
@@ -43,13 +46,14 @@ header {
   border-radius: 10px;
   margin-right: 24px;
   transition: 0.5s all;
+  cursor: pointer;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 .menu__item:hover {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 0px solid rgba(255, 255, 255, 0.5);
   background: linear-gradient(180deg, rgba(254, 200, 241, 0.9) -22.92%, rgba(237, 146, 215, 0) 26.73%), radial-gradient(96.63% 140.33% at 76.68% 66.67%, rgba(96, 46, 166, 0) 0%, rgba(201, 119, 214, 0.5) 100%);
   background-blend-mode: overlay, normal;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
@@ -57,6 +61,140 @@ header {
 .menu__link {
   color: #FFF;
   font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 750px;
+  padding-top: 137px;
+  padding-bottom: 285px;
+}
+.main__left-title {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  background: linear-gradient(rgb(204, 81, 214), rgba(90, 104, 232, 0.6), rgb(225, 177, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main__left-descr {
+  width: 565px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.button {
+  width: 204px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, rgba(254, 200, 241, 0.9) -22.92%, rgba(254, 200, 241, 0) 26.73%), radial-gradient(137.13% 253.39% at 76.68% 66.67%, #602EA6 0%, #C977D6 100%);
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.4), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.button:hover {
+  background: #602EA6, #C977D6;
+}
+.button__text {
+  color: #FFF;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-left: 10px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 424px;
+  height: 747px;
+  padding: 39px 24px 30px 0;
+  box-shadow: 0px 40px 40px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  gap: 8px;
+  align-items: flex-start;
+}
+.table__title {
+  margin-bottom: 36px;
+  margin-left: 86px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #fff;
+}
+.table__subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.table__item {
+  display: flex;
+  width: 400px;
+  padding: 20px 16px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid rgba(51, 66, 255, 0);
+  background: var(--list-layout-dark-update, linear-gradient(90deg, rgba(17, 16, 24, 0) 0.28%, rgba(17, 16, 24, 0.51) 129.42%));
+  background-blend-mode: overlay;
+}
+.table__item-title {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  background: linear-gradient(rgb(204, 81, 214), rgba(90, 104, 232, 0.6), rgb(225, 177, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.table__item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.table__btn {
+  display: flex;
+  width: 216px;
+  padding: 13px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  box-shadow: 0px 14px 20px 0px rgba(42, 51, 83, 0.8);
+  margin: 0 auto;
+  margin-top: 28px;
+  cursor: pointer;
+}
+.table__btn-text {
+  color: #FFF;
+  text-align: center;
   font-size: 15px;
   font-weight: 500;
   line-height: 23px;

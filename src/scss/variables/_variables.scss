@@ -1,5 +1,9 @@
 // Colors
-$dark: #303030;
+@mixin gradi {
+    background: linear-gradient(rgba(204, 81, 214, 1), rgba(90, 104, 232, 0.6), rgba(225, 177, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+};
 $primary: #54ED39;
 $secondary: #FBFE5D;
 $bg1: #92F2FF;
