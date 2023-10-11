@@ -15,6 +15,10 @@ a {
   margin: 0 auto;
 }
 
+.active {
+  display: flex;
+}
+
 .screen__first {
   background: url("../img/main_bg.png") no-repeat;
   height: 948px;
@@ -69,11 +73,6 @@ header .logo {
 .main {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
-}
-
-.main__left {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 30px;
@@ -81,7 +80,7 @@ header .logo {
   padding-top: 137px;
   padding-bottom: 285px;
 }
-.main__left-title {
+.main-title {
   font-size: 80px;
   font-style: normal;
   font-weight: 600;
@@ -90,7 +89,7 @@ header .logo {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main__left-descr {
+.main-descr {
   width: 565px;
   color: rgba(255, 255, 255, 0.6);
   font-family: Inter;
@@ -126,7 +125,7 @@ header .logo {
 }
 
 .table {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 424px;
   height: 747px;
