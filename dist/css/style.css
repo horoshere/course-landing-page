@@ -125,6 +125,8 @@ header .logo {
 }
 
 .table {
+  position: absolute;
+  right: 10%;
   display: none;
   flex-direction: column;
   width: 424px;
@@ -135,6 +137,9 @@ header .logo {
   border-radius: 20px;
   gap: 8px;
   align-items: flex-start;
+}
+.table-active {
+  display: flex;
 }
 .table__title {
   margin-bottom: 36px;
