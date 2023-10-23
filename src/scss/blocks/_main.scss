@@ -56,14 +56,10 @@
 }
 
 
-.container__table {
-
-}
-
 .table {
     position: absolute;
     right: 10%;
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 424px;
     height: 747px;
@@ -73,9 +69,6 @@
     border-radius: 20px;
     gap: 8px;
     align-items: flex-start;
-    &-active {
-        display: flex;
-    }
     &__title {
         margin-bottom: 36px;
         margin-left: 86px;

@@ -70,6 +70,14 @@ header .logo {
   line-height: 23px;
 }
 
+.active__item {
+  border-radius: 10px;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(180deg, rgba(254, 200, 241, 0.9) -22.92%, rgba(237, 146, 215, 0) 26.73%), radial-gradient(96.63% 140.33% at 76.68% 66.67%, rgba(96, 46, 166, 0) 0%, rgba(201, 119, 214, 0.5) 100%);
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #9375B6 inset;
+}
+
 .main {
   margin-top: 20px;
   display: flex;
@@ -127,7 +135,7 @@ header .logo {
 .table {
   position: absolute;
   right: 10%;
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 424px;
   height: 747px;
@@ -137,9 +145,6 @@ header .logo {
   border-radius: 20px;
   gap: 8px;
   align-items: flex-start;
-}
-.table-active {
-  display: flex;
 }
 .table__title {
   margin-bottom: 36px;
